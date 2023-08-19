@@ -8,18 +8,27 @@
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
     body {
-        background-size: cover;
+        background-size: 100vh;
         background-repeat: repeat;
-        background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 100 100" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="900" height="600" fill="%236600FF"></rect><g filter="url(%23blur1)"><circle cx="560" cy="477" fill="%23006ccc" r="357"></circle><circle cx="514" cy="245" fill="%236600FF" r="357"></circle><circle cx="96" cy="237" fill="%23006ccc" r="357"></circle><circle cx="565" cy="55" fill="%23006ccc" r="357"></circle><circle cx="853" cy="396" fill="%236600FF" r="357"></circle><circle cx="292" cy="257" fill="%23006ccc" r="357"></circle></g></svg>');
+        background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 675 900" width="675" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="167" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="675" height="900" fill="%23FF6F61"></rect><g filter="url(%23blur1)"><circle cx="327" cy="877" fill="%23e09e0d" r="371"></circle><circle cx="445" cy="38" fill="%23FF6F61" r="371"></circle><circle cx="304" cy="467" fill="%23e09e0d" r="371"></circle><circle cx="607" cy="679" fill="%23e09e0d" r="371"></circle><circle cx="49" cy="844" fill="%23FF6F61" r="371"></circle><circle cx="128" cy="289" fill="%23e09e0d" r="371"></circle></g></svg>');
     }
 }
 
 
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    body {
+        background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="163" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="960" height="540" fill="%23FF6F61"></rect><g filter="url(%23blur1)"><circle cx="407" cy="178" fill="%23e09e0d" r="363"></circle><circle cx="557" cy="363" fill="%23FF6F61" r="363"></circle><circle cx="787" cy="112" fill="%23e09e0d" r="363"></circle><circle cx="128" cy="209" fill="%23e09e0d" r="363"></circle><circle cx="235" cy="505" fill="%23FF6F61" r="363"></circle><circle cx="839" cy="366" fill="%23e09e0d" r="363"></circle></g></svg>');
+        background-size: 200vw;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     body {
-        background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="900" height="600" fill="%236600FF"></rect><g filter="url(%23blur1)"><circle cx="560" cy="477" fill="%23006ccc" r="357"></circle><circle cx="514" cy="245" fill="%236600FF" r="357"></circle><circle cx="96" cy="237" fill="%23006ccc" r="357"></circle><circle cx="565" cy="55" fill="%23006ccc" r="357"></circle><circle cx="853" cy="396" fill="%236600FF" r="357"></circle><circle cx="292" cy="257" fill="%23006ccc" r="357"></circle></g></svg>');
+        background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="163" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="960" height="540" fill="%23FF6F61"></rect><g filter="url(%23blur1)"><circle cx="407" cy="178" fill="%23e09e0d" r="363"></circle><circle cx="557" cy="363" fill="%23FF6F61" r="363"></circle><circle cx="787" cy="112" fill="%23e09e0d" r="363"></circle><circle cx="128" cy="209" fill="%23e09e0d" r="363"></circle><circle cx="235" cy="505" fill="%23FF6F61" r="363"></circle><circle cx="839" cy="366" fill="%23e09e0d" r="363"></circle></g></svg>');
         background-size: 100vw;
         background-repeat: no-repeat;
     }
@@ -29,6 +38,7 @@ body {
     color: #ffffff;
     font-family: 'vlated_bold';
     margin: 0;
+    overflow: hidden;
 }
 .container {
     margin: 0 auto;
@@ -40,7 +50,7 @@ body {
 
 .noise {
     background-image: url("./noise.png");
-    opacity: 15%;
+    opacity: 20%;
 }
 
 #welcome {
@@ -59,7 +69,7 @@ body {
 
 #welcome h3 {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
     margin-top: 20%;
 }
@@ -68,5 +78,6 @@ hr {
     color: rgb(255, 255, 255);
     width: 70%;
     margin: auto;
-    border: 2px solid;
+    border: 3px solid;
+    border-radius: 10px;
 }
