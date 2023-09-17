@@ -1,0 +1,10 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore package.json and package-lock.json
+package.json
+package-lock.json
+
+# Other stuff
+.idea
+.git

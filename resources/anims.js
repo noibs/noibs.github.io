@@ -33,7 +33,6 @@ document.getElementById('intro').style.transform = 'translate(-50%, -50%)';
 
 // Adjust the scale value for mobile
 if (window.innerWidth < 768) {
-    //document.body.style.backgroundSize = '200vh'
     anime({
         targets: '#intro',
         scale: ['0', '120%'], 
@@ -42,10 +41,7 @@ if (window.innerWidth < 768) {
         rotateZ: `${Math.floor(Math.random() * (25 - (-25) + 1)) + (-25)}deg`,
         duration: 1500,
         delay: 500,
-        direction: 'alternate',
-        begins: function() {
-            ;
-        }
+        direction: 'alternate'
     });
 } else {
     anime({
@@ -56,6 +52,19 @@ if (window.innerWidth < 768) {
         rotateZ: `${Math.floor(Math.random() * (50 - (-50) + 1)) + (-50)}deg`,
         duration: 1500,
         delay: 500,
-        direction: 'alternate',
+        direction: 'alternate'
     });
 }
+
+anime({
+    targets: '.button button',
+    translateY: ['700vh', '200px'],
+    rotateX: ['35', '0'],
+    rotateY: ['50', '0'],
+    rotateZ: ['-35', '0'],
+    delay: '3500',
+    easing: 'spring(1, 80, 10, 0)'
+})
+
+
+
