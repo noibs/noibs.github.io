@@ -11,9 +11,37 @@ function getRandomElement(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-// Function to update the background with a random SVG URL
+// Function to extract hex color from SVG URL
+function extractHexColor(svgURL) {
+    const hexColorMatch = svgURL.match(/cy="505".fill="%23([0-9A-Fa-f]{6})"/);
+    return hexColorMatch ? `#${hexColorMatch[1]}` : '#FFF'; // Default to white if not found
+}
+
+// Function to update the background and loading screen color with a random SVG URL
 function updateBackground() {
     const randomSvgURL = getRandomElement(svgURLs);
+    console.log(randomSvgURL);
+
+    // Extract the hex color from the SVG URL
+    const hexColor = extractHexColor(randomSvgURL);
+
+    // Update the loading screen color
+    const loadingScreen = document.querySelector('.loading-screen');
+    loadingScreen.style.backgroundColor = hexColor;
+
+    // Update the loading screen styles with the extracted hex color
+    const loadingScreenStyles = `
+        .loading-screen {
+            background-color: ${hexColor}; // Set the background color based on the extracted hex color
+        }
+    `;
+
+    // Create a style element and append it to the head of the document
+    const styleElement = document.createElement('style');
+    styleElement.innerHTML = loadingScreenStyles;
+    document.head.appendChild(styleElement);
+
+    // Update the background
     document.body.style.backgroundImage = `url('${randomSvgURL}')`;
 }
 
