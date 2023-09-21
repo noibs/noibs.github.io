@@ -2,35 +2,52 @@
 <html lang="en">
 <head>
     <title>Ellioott</title>
+    <link rel="stylesheet" href="./resources/css/combined/combined.css">
     <link rel="stylesheet" href="./resources/css/index/index.css">
+    <link rel="stylesheet" href="./resources/css/home/home.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://pub-2054fa1a9f0a46aaada31f6af77737b3.r2.dev/animejs/lib/anime.min.js"></script>
-<body>
+</head>
+<body data-barba="wrapper">
 
-    <!--Main div-->
-    <div id="foreground">
-        <h2>hi</h2>
-        <hr>
-        <h3>im elliott</h3>
+    <div class="load-container">
+        <div class="loading-screen">
+        </div>
     </div>
 
-    <!--Intro Animation Popup-->
-    <div id="intro">
-        <h2>hi</h2>
-        <hr>
-        <h3>im elliott</h3>
-    </div>
+    <main data-barba="container" data-barba-namespace="index">
+        <!--Main div-->
+        <div id="foreground">
+            <h2>hi</h2>
+            <hr>
+            <h3>im elliott</h3>
+        </div>
+
+        <!--Intro Animation Popup-->
+        <div id="intro">
+            <h2>hi</h2>
+            <hr>
+            <h3>im elliott</h3>
+        </div>
+        
+        <div class="button">
+            <a href="./home.html"><button>Continue</button></a>
+        </div>
+    </main>
+    
     <!--Adds noise effect-->
     <div class="container noise"></div>
-    
-    <div class="button">
-        <a href=""><button>Continue</button></a>
-    </div>
-
     <!--Loads page animations-->
-    <script src="./resources/anims.js"></script>
-
+    <script src="./resources/anime.js/index.js"></script>
+    <script src="./resources/anime.js/home.js"></script>
     <!--Loads randomly selected color palette for background-->
     <script src="./resources/background.js"></script>
+
+    <!--barba.js scripts-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./resources/barba.js/index.js"></script>
+
 </body>
 </html>

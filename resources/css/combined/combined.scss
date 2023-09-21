@@ -1,0 +1,68 @@
+    @font-face {
+        font-family: 'vlated_bold';
+        src: url('../../font/vlated_bold_script-webfont.woff2') format('woff2'),
+        url('../../font/vlated_bold_script-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    * {
+        font-family: 'vlated_bold', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    body {
+        overflow: hidden;
+    }
+  
+    @media screen and (max-width: 900px) {
+        body {
+        background-size: 200vh;
+        background-position: bottom;
+        height: 100%;
+        }
+    }
+    @media screen and (min-width: 900px) and (max-width: 1200px) {
+        body {
+        background-size: 200vw;
+        background-position: top;
+        }
+    }
+  
+    @media screen and (min-width: 1200px) {
+        body {
+        background-size: 100vw;
+        }
+    }
+
+    .noise {
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-image: url("../../noise.png");
+        opacity: 20%;
+    }
+
+    .loading-screen {
+        position: relative;
+        padding: 0 0 auto 0;
+        background-color: aqua;
+        width: 0%;
+        height: 100%;
+    }
+    
+    .load-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        z-index: 100;
+        pointer-events: none;
+        text-align: center;
+    }
