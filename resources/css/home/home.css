@@ -13,6 +13,7 @@
 }
 .intro h3 {
   white-space: nowrap;
+  font-family: monospace;
   font-size: 5vh;
   display: inline-block;
   line-height: 1em;
